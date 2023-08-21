@@ -4,14 +4,15 @@
 
 ### Create and activate virtual environment
 
-``` python
+``` shell
 python3 -m venv ./venv
 
 source ./venv/bin/activate
 ```
+
 ### Install Rasa
 
-```
+``` shell
 pip install rasa
 ```
 
@@ -19,12 +20,12 @@ pip install rasa
 
 Run this to train new data
 
-```
+``` shell
 rasa train
 ```
 
 Run this to activate interactive chat
 
-```
+``` shell
 rasa shell 
 ```
