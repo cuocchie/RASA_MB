@@ -1,0 +1,48 @@
+version: "3.1"
+
+nlu:
+- intent: reply_utter_greet
+  examples: |
+    - Vâng đúng rồi
+    - Ai đấy nhỉ?
+    - Ai vậy nhỉ?
+    - hello there
+
+- intent: goodbye
+  examples: |
+    - Thôi nhé
+    - Cảm ơn bạn đã tư vấn
+    - Cảm ơn em đã tư vấn
+    - bye bạn
+    - bai bạn
+    - bye
+    - bai
+    - Có gì mình sẽ liên hệ sau
+    - bye bye
+
+- intent: affirm
+  examples: |
+    - vâng
+    - đúng
+    - vâng bạn
+    - đúng bạn
+    - đúng rồi
+    - chuẩn
+    - có
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

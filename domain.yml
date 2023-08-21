@@ -1,0 +1,62 @@
+version: "3.1"
+
+intents:
+  # - utter_greet
+  # - utter_introduce
+  # - utter_thank
+  # - utter_problem_state
+  # - utter_understand
+  # - utter_reply_smell_query
+  # - utter_reply_clean_query
+  # - utter_reply_safety_query
+  # - utter_reply_chemical_query
+  # - utter_reply_price_query
+  # - utter_close_deal
+  # - utter_goodbye
+  - reply_utter_greet
+  - goodbye
+  - affirm
+
+responses:
+  utter_greet:
+  - text: "Xin chào, Anh/Chị [A] phải không ạ?"
+
+  utter_introduce:
+  - text: "Em là nhân viên bán hàng của công ty sản phẩm vệ sinh nội thất."
+
+  utter_problem_state:
+  - text: "Anh/chị có đang gặp khó khăn trong việc vệ sinh nội thất trong nhà không ạ?"
+
+  utter_thank:
+  - text: "Rất cảm ơn anh/chị đã chia sẻ."
+
+  utter_understand:
+  - text: "Em hiểu rồi ạ."
+
+  utter_reply_smell_query:
+  - text: "Về việc loại bỏ mùi khó chịu trong nhà vệ sinh, sản phẩm của chúng em cũng có khả năng khử mùi tốt, giúp không gian trở nên thoải mái hơn."
+
+  utter_reply_clean_query: 
+  - text: "Về khả năng vệ sinh, sản phẩm của chúng em có khả năng loại bỏ dầu mỡ và vết bẩn bám mạnh mẽ, giúp bếp luôn sáng bóng"
+
+  utter_reply_safety_query:
+  - text: "Sản phẩm của chúng em được thiết kế đặc biệt để an toàn cho các bề mặt và không gây hại cho sức kháng của vật liệu trong nhà anh/chị ạ."
+  
+  utter_reply_chemical_query:
+  - text: "Mặc dù sản phẩm của chúng em không hoàn toàn hữu cơ, nhưng chúng em cam kết sử dụng các thành phần an toàn và không gây hại cho sức kháng của vật liệu trong nhà. Chúng cũng được thiết kế để giảm thiểu tối đa hóa chất và tác động xấu tới môi trường."
+
+  utter_reply_price_query:
+  - text: " Sản phẩm của chúng em được thiết kế để cung cấp giá trị cao với mức giá hợp lý."
+
+  utter_close_deal:
+  - text: "Anh/chị cứ yên tâm suy nghĩ. Nếu sau này anh/chị có thêm câu hỏi hoặc cần thêm thông tin, em sẽ luôn sẵn sàng hỗ trợ"
+
+  utter_goodbye:
+  - text: "Xin cảm ơn anh/chị và chúc anh/chị có một ngày vui vẻ!"
+
+actions:
+  - action_session_start
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
