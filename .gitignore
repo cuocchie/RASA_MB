@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 #Rasa
-.rasa
+.rasa/
