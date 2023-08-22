@@ -9,19 +9,50 @@ stories:
 #   - intent: mood_great
 #   - action: utter_happy
 
-- story: normal path
+- story: end chat
   steps:
-  - action: action_session_start
-  - intent: reply_utter_greet
-  - action: utter_introduce
-  - action: utter_problem_state
-  - intent: affirm
-  - action: utter_understand
-  - action: utter_reply_smell_query
-  - action: utter_reply_clean_query
   - intent: goodbye
   - action: utter_goodbye
 
+- story: thank
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: sales
+  steps: 
+  - intent: ask_identity
+  - action: utter_introduce
+  - action: utter_problem_state
+  - intent: affirm
+  - action: utter_product_introduce
+  - action: utter_ask_for_more_question
+  - checkpoint: wait_for_user_question
+
+- story: ask_price
+  steps:
+  # - checkpoint: wait_for_user_question
+  - intent: price_ask
+  - action: utter_reply_price_query
+
+- story: ask_price
+  steps:
+  # - checkpoint: wait_for_user_question
+  - intent: chemical_ask
+  - action: utter_reply_chemical_query
+
+
+# - story: fail path
+#   steps:
+#   - action: action_session_start
+#   - intent: affirm
+#   - action: utter_introduce
+#   - action: utter_problem_state
+#   - intent: deny
+#   - action: utter_reply_smell_query
+#   - action: utter_reply_clean_query
+#   - intent: goodbye
+#   - action: utter_goodbye
 
 
 # - story: sad path 1

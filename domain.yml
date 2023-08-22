@@ -1,21 +1,14 @@
-version: "3.1"
+version: "3.1"https://civitai.com/tag/base%20model
 
 intents:
-  # - utter_greet
-  # - utter_introduce
-  # - utter_thank
-  # - utter_problem_state
-  # - utter_understand
-  # - utter_reply_smell_query
-  # - utter_reply_clean_query
-  # - utter_reply_safety_query
-  # - utter_reply_chemical_query
-  # - utter_reply_price_query
-  # - utter_close_deal
-  # - utter_goodbye
   - reply_utter_greet
   - goodbye
   - affirm
+  - ask_identity
+  - deny
+  - thank
+  - price_ask
+  - chemical_ask
 
 responses:
   utter_greet:
@@ -24,20 +17,23 @@ responses:
   utter_introduce:
   - text: "Em là nhân viên bán hàng của công ty sản phẩm vệ sinh nội thất."
 
+  utter_product_introduce:
+  - text: "EODOR là một sản phẩm vệ sinh..."
+
   utter_problem_state:
   - text: "Anh/chị có đang gặp khó khăn trong việc vệ sinh nội thất trong nhà không ạ?"
 
-  utter_thank:
+  utter_thank_afer_user_sharing:
   - text: "Rất cảm ơn anh/chị đã chia sẻ."
 
   utter_understand:
   - text: "Em hiểu rồi ạ."
 
   utter_reply_smell_query:
-  - text: "Về việc loại bỏ mùi khó chịu trong nhà vệ sinh, sản phẩm của chúng em cũng có khả năng khử mùi tốt, giúp không gian trở nên thoải mái hơn."
+  - text: "Về việc loại bỏ mùi khó chịu, sản phẩm của chúng em cũng có khả năng khử mùi tốt, giúp không gian trở nên thoải mái hơn."
 
   utter_reply_clean_query: 
-  - text: "Về khả năng vệ sinh, sản phẩm của chúng em có khả năng loại bỏ dầu mỡ và vết bẩn bám mạnh mẽ, giúp bếp luôn sáng bóng"
+  - text: "Về khả năng vệ sinh, sản phẩm của chúng em có khả năng loại bỏ dầu mỡ và vết bẩn bám mạnh mẽ, giúp không gian luôn sáng bóng"
 
   utter_reply_safety_query:
   - text: "Sản phẩm của chúng em được thiết kế đặc biệt để an toàn cho các bề mặt và không gây hại cho sức kháng của vật liệu trong nhà anh/chị ạ."
@@ -51,8 +47,14 @@ responses:
   utter_close_deal:
   - text: "Anh/chị cứ yên tâm suy nghĩ. Nếu sau này anh/chị có thêm câu hỏi hoặc cần thêm thông tin, em sẽ luôn sẵn sàng hỗ trợ"
 
+  utter_thank:
+  - text: "Dạ không có gì ạ"
+
   utter_goodbye:
   - text: "Xin cảm ơn anh/chị và chúc anh/chị có một ngày vui vẻ!"
+
+  utter_ask_for_more_question:
+  - text: "Anh/Chị có câu hỏi gì em sản phẩm EODOR của chúng em không ạ?"
 
 actions:
   - action_session_start

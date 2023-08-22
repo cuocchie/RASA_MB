@@ -1,18 +1,21 @@
 version: "3.1"
 
 nlu:
-- intent: reply_utter_greet
+# - intent: reply_utter_greet
+#   examples: |
+#     - Vâng đúng rồi
+#     - hello there
+
+- intent: ask_identity
   examples: |
-    - Vâng đúng rồi
-    - Ai đấy nhỉ?
-    - Ai vậy nhỉ?
-    - hello there
+    - ai đấy nhỉ?
+    - Xin hỏi bạn là ai?
+    - b là ai nhỉ?
+    - bạn là?
 
 - intent: goodbye
   examples: |
     - Thôi nhé
-    - Cảm ơn bạn đã tư vấn
-    - Cảm ơn em đã tư vấn
     - bye bạn
     - bai bạn
     - bye
@@ -32,17 +35,28 @@ nlu:
 
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - không
+    - mình không
+    - tôi không
 
-- intent: bot_challenge
+- intent: price_ask
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Giá bán của sản phẩm này là bao nhiêu?
+    - Giá bao nhiêu?
+    - Giá thế nào em?
+
+- intent: chemical_ask
+  examples: |
+    - sản phẩm có hữu cơ không?
+    - thành phẩm hữu cơ chứ
+    - hóa chất thì thế nào
+
+- intent: thank
+  examples: |
+    - cảm ơn
+    - Cảm ơn bạn đã tư vấn
+    - Cảm ơn em đã tư vấn
+
+- intent: out_of_scope
+  examples:
+  
