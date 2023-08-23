@@ -1,4 +1,4 @@
-version: "3.1"https://civitai.com/tag/base%20model
+version: "3.1"
 
 intents:
   - reply_utter_greet

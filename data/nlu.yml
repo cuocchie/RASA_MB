@@ -57,6 +57,6 @@ nlu:
     - Cảm ơn bạn đã tư vấn
     - Cảm ơn em đã tư vấn
 
-- intent: out_of_scope
-  examples:
+# - intent: out_of_scope
+#   examples:
   
