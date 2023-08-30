@@ -1,0 +1,1 @@
+**Xin chào, Anh/Chị [A] phải không ạ?**

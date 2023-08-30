@@ -1,10 +1,6 @@
 version: "3.1"
 
 nlu:
-# - intent: reply_utter_greet
-#   examples: |
-#     - Vâng đúng rồi
-#     - hello there
 
 - intent: ask_identity
   examples: |
@@ -56,6 +52,13 @@ nlu:
     - cảm ơn
     - Cảm ơn bạn đã tư vấn
     - Cảm ơn em đã tư vấn
+
+- intent: deny_sale
+  examples: |
+    - mình không có nhu cầu
+    - mình xin phép mình đang bận
+    - Mình không hứng thú
+
 
 # - intent: out_of_scope
 #   examples:

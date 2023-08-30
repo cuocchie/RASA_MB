@@ -29,3 +29,13 @@ Run this to activate interactive chat
 ``` shell
 rasa shell 
 ```
+
+# LLM vs LLM
+
+View .LLMvsLLM/LLMvsLLM.ipynb
+
+## To chat with LLM as sale person
+
+```shell
+chainlit run sale_bot.py 
+```

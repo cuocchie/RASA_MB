@@ -7,6 +7,12 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: Say goodbye anytime the user dont want to talk
+  steps:
+  - intent: deny_sale
+  - action: utter_re_contact
+  - action: utter_goodbye
+
 # - rule: Introduction
 #   steps:
 #   - intent: ask_identity

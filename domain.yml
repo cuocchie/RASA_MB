@@ -9,6 +9,7 @@ intents:
   - thank
   - price_ask
   - chemical_ask
+  - deny_sale
 
 responses:
   utter_greet:
@@ -49,6 +50,9 @@ responses:
 
   utter_thank:
   - text: "Dạ không có gì ạ"
+
+  utter_re_contact:
+  - text: "Dạ có gì em xin phép liên hệ lại mình sau nhé ạ!"
 
   utter_goodbye:
   - text: "Xin cảm ơn anh/chị và chúc anh/chị có một ngày vui vẻ!"
