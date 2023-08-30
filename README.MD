@@ -32,7 +32,7 @@ rasa shell
 
 # LLM vs LLM
 
-View .LLMvsLLM/LLMvsLLM.ipynb
+View [LLMvsLLM.ipynb](./LLMvsLLM/LLMvsLLM.ipynb)
 
 ## To chat with LLM as sale person
 

@@ -162,4 +162,4 @@ cython_debug/
 #Rasa
 .rasa/
 models/*.tar.gz
-.chainlit
+.chainlit/
