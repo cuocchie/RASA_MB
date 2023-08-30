@@ -9,7 +9,7 @@ from langchain.document_loaders import WebBaseLoader
 from langchain.memory import ConversationBufferMemory
 
 
-OPENAI_KEY = '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'
+OPENAI_KEY =
 
 @on_chat_start
 def init():
